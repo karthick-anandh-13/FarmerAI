@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+*.log.*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Uploads (user uploaded files, not needed in git)
+uploads/
+
+# Coverage / test
+coverage/
+*.lcov
+
+# Build / cache
+dist/
+build/
+.cache/
+.tmp/
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Misc
+*.bak
+*.old
