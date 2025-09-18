@@ -1,0 +1,78 @@
+{
+  "success": true,
+  "message": "Signup successful",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxMzEwOTFiMjEwMDQ1MTVlMTRjNCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA0Njg4LCJleHAiOjE3NTg4MDk0ODh9.B_D6-4AdfRMQK127q1e42QE1QNmh9gR3gGVVFCPhiao",
+  "user": {
+    "id": "68cc131091b21004515e14c4",
+    "name": "Farmer One",
+    "email": "farmer1@example.com",
+    "role": "user"
+  }
+}
+
+C:\Users\ADMIN>curl -X POST http://localhost:5000/api/auth/signup -H "Content-Type: application/json" -d "{\"name\":\"Farmer Three\",\"email\":\"farmer3@example.com\",\"password\":\"secret123\"}"
+{"success":true,"message":"Signup successful","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo","user":{"id":"68cc14ace4a00b8e0b5802e1","name":"Farmer Three","email":"farmer3@example.com","role":"user"}}
+C:\Users\ADMIN>
+
+
+curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" http://localhost:5000/api/protected
+
+
+C:\Users\ADMIN>curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" http://localhost:5000/api/protected {"success":true,"message":"You accessed a protected route","user":{"_id":"68cc14ace4a00b8e0b5802e1","name":"Farmer Three","email":"farmer3@example.com","role":"user","createdAt":"2025-09-18T14:18:20.592Z","updatedAt":"2025-09-18T14:18:20.592Z","__v":0}} C:\Users\ADMIN>
+
+
+curl -X POST http://localhost:5000/api/posts -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"content\":\"This is my first post!\",\"image\":\"\"}"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/comment -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"text\":\"Nice post!\"}"
+
+{"success":true,"message":"Post created","post":{"user":"68cc14ace4a00b8e0b5802e1","content":"This is my first post!","image":"","likes":[],"comments":[],"_id":"68cc189693fc1bd543c8bfd4","createdAt":"2025-09-18T14:35:02.096Z","updatedAt":"2025-09-18T14:35:02.096Z","__v":0}}
+
+
+curl -X POST http://localhost:5000/api/posts/68cc14ace4a00b8e0b5802e1/comment -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"text\":\"Nice post!\"}"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/like -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/unlike -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/like -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo
+"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/like -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
+
+curl -X POST http://localhost:5000/api/chat/query -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"query\":\"When should I plant paddy?\"}"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/like -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/like -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
+
+curl -X POST http://localhost:5000/api/posts/68cc189693fc1bd543c8bfd4/comment -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"text\":\"Great post!\"}"
+
+curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" " http://localhost:5000/api/notifications
+
+curl -X POST http://localhost:5000/api/posts -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "content=This is a post with image" -F "image=@"C:\Users\ADMIN\Pictures\chatgpt photos\chatgpt01.png"
+
+curl -X POST http://localhost:5000/api/posts -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "content=This is a post with image" -F "image=@\"C:\Users\ADMIN\Pictures\chatgpt photos\chatgpt01.png\""
+
+curl -X POST http://localhost:5000/api/posts -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "content=This is a post with image" -F "image=@\"C:\Users\ADMIN\Pictures\chatgpt photos\chatgpt01.png\""
+
+curl -X POST http://localhost:5000/api/posts -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "content=This is a post with image" -F "image=@\"C:\Users\ADMIN\Pictures\chatgpt photos\chatgpt01.png\""
+
+curl -X POST http://localhost:5000/api/posts -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "content=This is a post with image" -F "image=@\"C:\Users\ADMIN\Pictures\chatgpt photos\chatgpt01.png\""
+
+curl -X POST http://localhost:5000/api/groups -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"name\":\"Vegetable Farmers\",\"description\":\"A place for vegetable growers to share tips\",\"isPrivate\":false}"
+
+"groups":[{"_id":"68cc4a03243fe5167252ab32
+
+curl -X POST http://localhost:5000/api/groups/68cc4a03243fe5167252ab32/join -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
+
+curl -X POST http://localhost:5000/api/groups/68cc4a03243fe5167252ab32/join -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"message\":\"I farm in Pune and want to join\"}"
+
+curl -X PATCH http://localhost:5000/api/users/me -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "name=New Name" -F "bio=My bio" -F "avatar=@'C:\Users\ADMIN\Pictures\chatgpt photos\chatgpt01.png\'"
+
+curl -X PATCH http://localhost:5000/api/users/me -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -H "Content-Type: application/json" -d "{\"name\":\"New Name\",\"bio\":\"My bio\"}"
+
+curl -X POST http://localhost:5000/api/auth/forgot-password -H "Content-Type: application/json" -d "{\"email\":\"farmer3@example.com\"}"
+
+curl -X PATCH http://localhost:5000/api/users/me -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo" -F "name=New Name" -F "bio=My bio" -F "avatar=@"C:\Users\ADMIN\Pictures\Saved Pictures\a-hyperrealistic-image-of-elon.jpeg""
+
+wscat -c ws://localhost:5000 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2MxNGFjZTRhMDBiOGUwYjU4MDJlMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjA1MTAwLCJleHAiOjE3NTg4MDk5MDB9.KqdMAL1K8eToSjslvchD7dlllcFf2W78Nux2Slm_cYo"
