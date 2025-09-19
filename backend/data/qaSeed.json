@@ -1,0 +1,818 @@
+[
+  {
+    "question": "When should I water tomato plants?",
+    "answer": "Water tomato plants early in the morning, 2–3 times per week, keeping the soil evenly moist."
+  },
+  {
+    "question": "What is the best fertilizer for rice?",
+    "answer": "For rice, use a balanced fertilizer containing nitrogen, phosphorus, and potassium, applied in split doses."
+  },
+  {
+    "question": "How can I prevent pests in cotton?",
+    "answer": "Use crop rotation, resistant cotton varieties, and natural predators. Neem spray also helps reduce pest attacks."
+  },
+  {
+    "question": "What is organic farming?",
+    "answer": "Organic farming is a method of agriculture that avoids synthetic fertilizers and pesticides, focusing on natural inputs."
+  },
+  {
+    "question": "How do I improve soil fertility?",
+    "answer": "Add compost, farmyard manure, green manure crops, and practice crop rotation."
+  },
+  {
+    "question": "How often should I irrigate wheat?",
+    "answer": "Irrigate wheat 4–6 times during the growing season, especially at crown root initiation, booting, and grain filling stages."
+  },
+  {
+    "question": "Which crops are suitable for drip irrigation?",
+    "answer": "Crops like vegetables, fruits, cotton, sugarcane, and flowers benefit most from drip irrigation."
+  },
+  {
+    "question": "What is mulching?",
+    "answer": "Mulching is covering the soil with straw, leaves, or plastic to conserve moisture, reduce weeds, and improve soil health."
+  },
+  {
+    "question": "What are government schemes for farmers?",
+    "answer": "Schemes like PM-KISAN, Kisan Credit Card (KCC), and Pradhan Mantri Fasal Bima Yojana (PMFBY) provide financial and insurance support."
+  },
+  {
+    "question": "How can I store harvested grains?",
+    "answer": "Store grains in airtight containers or gunny bags with neem leaves, and use fumigation if required to prevent pests."
+  },
+  {
+    "question": "What is the ideal soil pH for growing potatoes?",
+    "answer": "Potatoes prefer slightly acidic soil, with an ideal pH range of 5.0 to 6.0."
+  },
+  {
+    "question": "How do I control aphids on my plants naturally?",
+    "answer": "Use a strong spray of water to dislodge them, apply insecticidal soap, or introduce beneficial insects like ladybugs and lacewings."
+  },
+  {
+    "question": "What is companion planting?",
+    "answer": "Companion planting is the practice of growing different plants together to deter pests, enhance growth, or improve flavor (e.g., tomatoes with basil, corn with beans)."
+  },
+  {
+    "question": "When is the best time to harvest corn?",
+    "answer": "Harvest corn when the silks turn brown and dry, and the kernels are plump and release a milky juice when punctured."
+  },
+  {
+    "question": "What causes blossom end rot in tomatoes?",
+    "answer": "Blossom end rot is primarily caused by a calcium deficiency, often triggered by inconsistent watering."
+  },
+  {
+    "question": "How can I test my soil's nutrient levels?",
+    "answer": "You can use a home testing kit or send a soil sample to a professional laboratory for a detailed analysis."
+  },
+  {
+    "question": "What is no-till farming?",
+    "answer": "No-till farming is a method of growing crops without disturbing the soil through tillage, which helps improve soil health and reduce erosion."
+  },
+  {
+    "question": "How often should I fertilize my citrus trees?",
+    "answer": "Fertilize citrus trees 3-4 times a year, typically in late winter, late spring, and early fall, with a fertilizer formulated for citrus."
+  },
+  {
+    "question": "What are cover crops and their benefits?",
+    "answer": "Cover crops (e.g., clover, rye) are planted to cover the soil, not for harvest. They prevent erosion, suppress weeds, and add organic matter."
+  },
+  {
+    "question": "How do I prune an apple tree?",
+    "answer": "Prune in late winter to remove dead, diseased, or crossing branches and to open up the canopy for better light and air circulation."
+  },
+  {
+    "question": "What is hydroponics?",
+    "answer": "Hydroponics is a method of growing plants without soil, using a nutrient-rich water solution to deliver minerals directly to the roots."
+  },
+  {
+    "question": "Why are my cucumber leaves turning yellow?",
+    "answer": "Yellow leaves can be caused by overwatering, nutrient deficiencies (like nitrogen), or diseases like powdery mildew or cucumber mosaic virus."
+  },
+  {
+    "question": "What is the role of earthworms in soil?",
+    "answer": "Earthworms aerate the soil, improve drainage, and break down organic matter into nutrient-rich castings (vermicompost)."
+  },
+  {
+    "question": "How can I attract pollinators to my garden?",
+    "answer": "Plant a variety of native, nectar-rich flowers that bloom at different times, and provide a water source and shelter."
+  },
+  {
+    "question": "What is integrated pest management (IPM)?",
+    "answer": "IPM is a sustainable approach to managing pests that combines biological, cultural, physical, and chemical tools in a way that minimizes economic, health, and environmental risks."
+  },
+  {
+    "question": "How do I save seeds from heirloom tomatoes?",
+    "answer": "Scoop out the seeds and gel, ferment them in water for 1-3 days, rinse clean, and then dry thoroughly on a paper towel before storing."
+  },
+  {
+    "question": "What is vermicomposting?",
+    "answer": "Vermicomposting is the process of using worms (usually red wigglers) to break down organic food waste into a high-quality compost called worm castings."
+  },
+  {
+    "question": "How much sun do vegetable gardens need?",
+    "answer": "Most vegetable plants require a minimum of 6-8 hours of direct sunlight per day for optimal growth and production."
+  },
+  {
+    "question": "What is crop rotation?",
+    "answer": "Crop rotation is the practice of growing different types of crops in the same area in sequential seasons to manage soil fertility and break pest and disease cycles."
+  },
+  {
+    "question": "How can I prevent weeds in my garden?",
+    "answer": "Use mulch (straw, wood chips, plastic), plant cover crops, hand-pull weeds when they are small, or use a pre-emergent herbicide carefully."
+  },
+  {
+    "question": "What are the symptoms of nitrogen deficiency in plants?",
+    "answer": "Symptoms include yellowing (chlorosis) of older leaves first, stunted growth, and reduced yield."
+  },
+  {
+    "question": "What is the best way to water a lawn?",
+    "answer": "Water deeply and infrequently, early in the morning, to encourage deep root growth. Most lawns need about 1 inch of water per week."
+  },
+  {
+    "question": "How do I grow asparagus?",
+    "answer": "Plant crowns in a sunny, well-drained bed in spring. Do not harvest the first year; harvest lightly the second year; full harvest begins the third year."
+  },
+  {
+    "question": "What is the difference between determinate and indeterminate tomatoes?",
+    "answer": "Determinate tomatoes grow to a fixed size and produce one large harvest. Indeterminate tomatoes continue growing and producing fruit throughout the season."
+  },
+  {
+    "question": "How can I make my own compost?",
+    "answer": "Layer green materials (kitchen scraps, grass clippings) and brown materials (dry leaves, cardboard) in a pile or bin, keep it moist, and turn it regularly."
+  },
+  {
+    "question": "What is grafting in plants?",
+    "answer": "Grafting is a technique where tissues from one plant (the scion) are inserted into those of another (the rootstock) so they grow together as one plant."
+  },
+  {
+    "question": "Why is my zucchini plant flowering but not producing fruit?",
+    "answer": "This is likely due to a lack of pollination. The early flowers are often male. You can hand-pollinate by transferring pollen from a male flower to a female flower (which has a small fruit at its base)."
+  },
+  {
+    "question": "What are the primary macronutrients plants need?",
+    "answer": "The primary macronutrients are Nitrogen (N) for leaf growth, Phosphorus (P) for roots and flowers, and Potassium (K) for overall health and fruit quality."
+  },
+  {
+    "question": "How do I protect my plants from frost?",
+    "answer": "Cover plants with frost cloths, blankets, or cloches. Watering the soil before a frost can also help, as wet soil retains more heat than dry soil."
+  },
+  {
+    "question": "What is precision agriculture?",
+    "answer": "Precision agriculture is a farming management concept that uses technology like GPS, sensors, and data analytics to observe and respond to field variability in crops."
+  },
+  {
+    "question": "How do I know when a watermelon is ripe?",
+    "answer": "Look for a creamy yellow spot where it rested on the ground, a dull sound when thumped, and a dry, brown tendril near the stem."
+  },
+  {
+    "question": "What is the purpose of hardening off seedlings?",
+    "answer": "Hardening off gradually acclimates tender seedlings started indoors to outdoor conditions like sun, wind, and cooler temperatures to prevent shock."
+  },
+  {
+    "question": "How can I improve clay soil?",
+    "answer": "Amend clay soil by adding generous amounts of organic matter like compost, well-rotted manure, or leaf mold to improve drainage and aeration."
+  },
+  {
+    "question": "What is a high-tunnel system?",
+    "answer": "A high tunnel (or hoop house) is an unheated, plastic-covered structure that extends the growing season by protecting crops from cold and pests."
+  },
+  {
+    "question": "How do I control fungal diseases like powdery mildew?",
+    "answer": "Improve air circulation, avoid overhead watering, and apply fungicides like sulfur or neem oil. Remove and destroy severely infected plant parts."
+  },
+  {
+    "question": "What are heirloom varieties?",
+    "answer": "Heirloom plant varieties are open-pollinated cultivars that have been passed down through generations, often prized for their flavor, history, and genetic diversity."
+  },
+  {
+    "question": "How much space do pumpkin plants need?",
+    "answer": "Pumpkin plants are large vines and need a significant amount of space. Allow at least 50 to 100 square feet per hill for large varieties."
+  },
+  {
+    "question": "What is the role of bees in agriculture?",
+    "answer": "Bees are vital pollinators for many crops, transferring pollen between flowers, which is essential for fruit and seed production."
+  },
+  {
+    "question": "How do I start a raised bed garden?",
+    "answer": "Build a frame, place it in a sunny location, fill it with a mix of topsoil and compost, and then plant your chosen vegetables or flowers."
+  },
+  {
+    "question": "What is the difference between organic and synthetic fertilizer?",
+    "answer": "Organic fertilizers are derived from plant or animal matter and release nutrients slowly. Synthetic fertilizers are man-made and provide nutrients in a readily available form."
+  },
+  {
+    "question": "How can I grow mushrooms at home?",
+    "answer": "Mushrooms can be grown indoors on a sterilized substrate like straw or hardwood sawdust, using a mushroom spawn kit for easiest success."
+  },
+  {
+    "question": "What is food security?",
+    "answer": "Food security means that all people, at all times, have physical and economic access to sufficient, safe, and nutritious food to meet their dietary needs."
+  },
+  {
+    "question": "Why are my pepper flowers dropping off?",
+    "answer": "Flower drop can be caused by extreme temperatures (too hot or too cold), over-fertilizing with nitrogen, or lack of pollination."
+  },
+  {
+    "question": "What is sustainable agriculture?",
+    "answer": "Sustainable agriculture is farming that meets society's food needs without compromising the ability of future generations to meet their own needs, focusing on environmental health, economic profitability, and social equity."
+  },
+  {
+    "question": "How do I store potatoes long-term?",
+    "answer": "Cure potatoes for 1-2 weeks, then store them in a cool, dark, well-ventilated place (ideally 45-50°F or 7-10°C) away from onions."
+  },
+  {
+    "question": "What is the green revolution?",
+    "answer": "The Green Revolution was a period of significant increase in agricultural production worldwide from the 1940s-1960s, due to new technologies like high-yield varieties and synthetic fertilizers."
+  },
+  {
+    "question": "How can I tell if my seeds are still good?",
+    "answer": "Perform a germination test: place 10 seeds on a damp paper towel, keep it moist and warm, and check after the expected germination time to see how many sprout."
+  },
+  {
+    "question": "What is aquaculture?",
+    "answer": "Aquaculture, also known as fish farming, is the breeding, rearing, and harvesting of fish, shellfish, algae, and other organisms in all types of water environments."
+  },
+  {
+    "question": "How do I get rid of slugs in my garden?",
+    "answer": "Use traps like beer in a shallow dish, hand-pick them at night, create barriers with diatomaceous earth, or encourage natural predators like birds and frogs."
+  },
+  {
+    "question": "What is the value of biodiversity on a farm?",
+    "answer": "Biodiversity builds healthy ecosystems that support crop pollination, soil fertility, natural pest control, and resilience to climate change and disease."
+  },
+  {
+    "question": "How do I grow blueberries successfully?",
+    "answer": "Blueberries require full sun and very acidic soil (pH 4.0-5.5). Amend soil with peat moss and sulfur, and ensure consistent moisture with good drainage."
+  },
+  {
+    "question": "What is the best time of day to harvest leafy greens?",
+    "answer": "Harvest leafy greens early in the morning when their water content is highest. This keeps them crisp and extends their shelf life."
+  },
+  {
+    "question": "How can I naturally lower the pH of my soil for acid-loving plants?",
+    "answer": "Amend the soil with elemental sulfur or peat moss to gradually lower the pH. Using acidifying fertilizers like ammonium sulfate can also help."
+  },
+  {
+    "question": "What is crop yield and how is it measured?",
+    "answer": "Crop yield is the measure of the amount of agricultural production harvested per unit of land area. It is often measured in bushels, tons, or kilograms per acre or hectare."
+  },
+  {
+    "question": "Why is it important to clean garden tools after use?",
+    "answer": "Cleaning tools prevents the spread of diseases and pests between plants. It also prevents rust and keeps your tools sharp and effective for longer."
+  },
+  {
+    "question": "What are the benefits of using raised garden beds?",
+    "answer": "Raised beds provide improved drainage, better soil quality, and easier weed control. They also warm up faster in spring, allowing for earlier planting."
+  },
+  {
+    "question": "How does overwatering harm plants?",
+    "answer": "Overwatering suffocates roots by filling air pockets in the soil, preventing oxygen uptake. It also creates ideal conditions for root rot and other fungal diseases."
+  },
+  {
+    "question": "What is the purpose of a windbreak in agriculture?",
+    "answer": "Windbreaks protect crops and soil from damaging winds, reducing erosion and water loss. They also provide habitat for beneficial wildlife and pollinators."
+  },
+  {
+    "question": "How do you prepare a garden for the winter season?",
+    "answer": "Remove spent plant debris to discourage pests and diseases, and add a layer of compost or mulch to protect soil. You can also plant cover crops like winter rye to enrich the soil."
+  },
+  {
+    "question": "What is the role of potassium in plant growth?",
+    "answer": "Potassium regulates water uptake and improves overall plant vigor and disease resistance. It is crucial for the development of flowers, fruits, and seeds."
+  },
+  {
+    "question": "How can you tell the difference between a male and female pumpkin flower?",
+    "answer": "Male flowers have a straight, thin stem right behind the petals. Female flowers have a small, round bulge (the ovary) that looks like a tiny fruit at the base of the flower."
+  },
+  {
+    "question": "What is the 'danger zone' for composting?",
+    "answer": "The danger zone is when a compost pile fails to heat up, often due to a lack of nitrogen, oxygen, or moisture. This results in a slow, smelly decomposition process."
+  },
+  {
+    "question": "Why should you not plant the same crop in the same spot every year?",
+    "answer": "This practice, called monocropping, depletes specific nutrients from the soil. It also allows pests and diseases that target that crop to build up in the soil."
+  },
+  {
+    "question": "What is the difference between a cool-season and a warm-season crop?",
+    "answer": "Cool-season crops (e.g., lettuce, peas) thrive in cooler temperatures and can tolerate light frosts. Warm-season crops (e.g., tomatoes, peppers) require warm soil and air temperatures to grow and are sensitive to frost."
+  },
+  {
+    "question": "How does drip irrigation conserve water?",
+    "answer": "Drip irrigation delivers water slowly and directly to the root zone, minimizing evaporation and runoff. This method is far more efficient than overhead sprinklers."
+  },
+  {
+    "question": "What is the function of nitrogen-fixing bacteria?",
+    "answer": "These bacteria, often found in legume root nodules, convert atmospheric nitrogen into a form plants can use. This naturally fertilizes the soil and benefits future plants."
+  },
+  {
+    "question": "What is a seed tape and what is its advantage?",
+    "answer": "Seed tape is a biodegradable paper strip with seeds embedded at perfect spacing. It makes planting small seeds like carrots or lettuce easy and eliminates the need for thinning."
+  },
+  {
+    "question": "Why is it important to know your plant hardiness zone?",
+    "answer": "Your hardiness zone indicates the average minimum winter temperature in your area. This knowledge helps you choose perennial plants that will survive the winter in your climate."
+  },
+  {
+    "question": "What is the best way to support heavy tomato plants?",
+    "answer": "Use sturdy cages, trellises, or stakes to keep the fruit off the ground and improve air circulation. Tie the plants loosely to the support with soft material as they grow."
+  },
+  {
+    "question": "How does mulching help in water conservation?",
+    "answer": "Mulch acts as a protective barrier, reducing water evaporation from the soil surface. It also helps soil retain moisture for longer periods between watering."
+  },
+  {
+    "question": "What are the signs of a healthy, thriving soil?",
+    "answer": "Healthy soil is crumbly, well-aerated, and full of organic matter and earthworms. It has a pleasant, earthy smell and drains well while holding moisture."
+  },
+  {
+    "question": "What is the primary cause of bolting in lettuce and spinach?",
+    "answer": "Bolting (premature flowering) is triggered by increasing day length and high temperatures. It makes the leaves bitter and signals the end of the plant's leafy growth stage."
+  },
+  {
+    "question": "How can you encourage more blooms on a flowering plant?",
+    "answer": "Ensure the plant gets adequate sunlight and use a fertilizer higher in phosphorus (the middle number on the package). Deadheading spent flowers also encourages more blooms."
+  },
+  {
+    "question": "What is the purpose of chilling hours for fruit trees?",
+    "answer": "Chilling hours are the number of cold hours a deciduous fruit tree needs to break dormancy and produce flowers and fruit normally. Without enough chill hours, flowering is poor."
+  },
+  {
+    "question": "Why is it beneficial to leave some areas of a farm wild?",
+    "answer": "Wild areas provide essential habitat for pollinators and beneficial insects that help control pests. This promotes biodiversity and natural ecosystem services on the farm."
+  },
+  {
+    "question": "What is the most critical factor for successful seed germination?",
+    "answer": "Adequate moisture is the most critical factor, as it triggers the seed to break dormancy. Consistent warmth and appropriate soil contact are also very important."
+  },
+  {
+    "question": "How do you prevent transplant shock in seedlings?",
+    "answer": "Harden off seedlings gradually over a week before planting them outside. Water them thoroughly before and after transplanting to ease the transition."
+  },
+  {
+    "question": "What is the value of planting native species?",
+    "answer": "Native plants are adapted to local conditions, making them more drought-resistant and low-maintenance. They also provide the best food and habitat for local wildlife and pollinators."
+  },
+  {
+    "question": "What does 'full sun' mean on a plant tag?",
+    "answer": "Full sun means the plant requires at least 6 to 8 hours of direct sunlight each day to grow and flower properly. Less sun often results in weak growth and fewer flowers."
+  },
+  {
+    "question": "How can you control cabbage worms organically?",
+    "answer": "Use floating row covers to prevent moths from laying eggs. For existing infestations, apply Bacillus thuringiensis (Bt), a natural soil bacteria that is toxic to caterpillars."
+  },
+  {
+    "question": "What is the difference between a hybrid and an heirloom seed?",
+    "answer": "Hybrid seeds are crossbred for specific traits like disease resistance or uniformity. Heirloom seeds are open-pollinated varieties passed down for generations, prized for their flavor and genetic diversity."
+  },
+  {
+    "question": "Why is soil erosion a major problem in agriculture?",
+    "answer": "Soil erosion washes away the nutrient-rich topsoil, which is essential for plant growth. It also pollutes waterways with sediments and agricultural chemicals."
+  },
+  {
+    "question": "What is a good companion plant for roses and why?",
+    "answer": "Garlic is a excellent companion for roses. Its strong scent helps deter common rose pests like aphids and can help prevent black spot disease."
+  },
+  {
+    "question": "How does climate change affect agriculture?",
+    "answer": "Climate change causes more frequent and severe weather events like droughts and floods, disrupting growing seasons. It also shifts pest and disease patterns, creating new challenges."
+  },
+  {
+    "question": "What is the simplest way to extend the harvest of beans?",
+    "answer": "Practice successive planting by sowing a new batch of seeds every two weeks. Keep harvesting the pods regularly to encourage the plant to produce more."
+  },
+  {
+    "question": "Why is it important to use clean, disease-free seeds?",
+    "answer": "Diseases can often be seed-borne, infecting the new plant and spreading through the garden. Starting with clean seeds is the first step in preventative disease control."
+  },
+  {
+    "question": "What is the main advantage of using a soaker hose?",
+    "answer": "A soaker hose delivers water directly to the soil at the base of plants, minimizing water waste through evaporation and keeping foliage dry to prevent disease."
+  },
+  {
+    "question": "How can you attract ladybugs to your garden?",
+    "answer": "Plant pollen-rich flowers like dill, fennel, yarrow, and marigolds. Avoid using broad-spectrum pesticides that will kill them along with the pests."
+  },
+  {
+    "question": "What is the primary ingredient in most commercial potting mixes?",
+    "answer": "Sphagnum peat moss is a common primary ingredient because it retains moisture and air well. Many mixes also contain perlite for aeration and vermiculite for water retention."
+  },
+  {
+    "question": "Why is it necessary to thin out carrot seedlings?",
+    "answer": "Thinning gives each carrot enough space to develop a full-sized, straight root. Overcrowded carrots will become stunted, twisted, and compete for nutrients."
+  },
+  {
+    "question": "What is the key to growing large, sweet onions?",
+    "answer": "Onions need consistent moisture and plenty of nitrogen early in their growth cycle. Ensuring they get full sun is also critical for bulb development and sugar production."
+  },
+  {
+    "question": "How does adding sand to clay soil improve it?",
+    "answer": "Adding coarse sand, along with organic matter, helps break up clay particles and improve drainage. Adding sand alone can create a concrete-like substance, so compost is essential."
+  },
+  {
+    "question": "What is the purpose of a soil inoculant for legumes?",
+    "answer": "A soil inoculant contains the specific rhizobia bacteria that form a symbiotic relationship with legume roots. This helps the plants fix their own nitrogen from the air."
+  },
+  {
+    "question": "Why are my pepper plants not turning red?",
+    "answer": "Peppers take time to change color after reaching full size, a process called ripening which requires warmth and sunlight. Cool temperatures can significantly slow down this process."
+  },
+  {
+    "question": "What is the best way to store fresh herbs from the garden?",
+    "answer": "For tender herbs like basil and cilantro, place stems in a glass of water like a bouquet. For hardy herbs like rosemary and thyme, wrap them in a damp paper towel and refrigerate."
+  },
+  {
+    "question": "How can you quickly add nitrogen to your garden soil?",
+    "answer": "Side-dress plants with a blood meal or fish emulsion solution for a fast-acting nitrogen boost. Planting and tilling in a green manure cover crop is another effective method."
+  },
+  {
+    "question": "What is the biggest threat to honeybee populations?",
+    "answer": "Colony Collapse Disorder is a major threat, likely caused by a combination of factors including pesticides, parasites like varroa mites, and lack of diverse food sources."
+  },
+  {
+    "question": "Why should you avoid working in the garden when the soil is wet?",
+    "answer": "Working wet soil compacts it, destroying its structure and squeezing out air pockets essential for root growth. This can lead to poor drainage and hard, clumpy soil."
+  },
+  {
+    "question": "What is the function of the endosperm in a seed?",
+    "answer": "The endosperm is the starchy tissue that provides stored energy and nutrients for the seed embryo to use during germination. It feeds the young plant until it can photosynthesize."
+  },
+  {
+    "question": "How can you prevent cutworms from damaging young seedlings?",
+    "answer": "Create a physical barrier by placing a collar around the stem (using cardboard, aluminum foil, or a paper cup). This prevents the cutworm from encircling and severing the stem."
+  },
+  {
+    "question": "What does NPK stand for on a fertilizer bag?",
+    "answer": "NPK stands for Nitrogen (N), Phosphorus (P), and Potassium (K). These numbers represent the percentage by weight of each of these three primary macronutrients."
+  },
+  {
+    "question": "Why are my zucchini fruits rotting when they are small?",
+    "answer": "This is likely blossom end rot, caused by a calcium deficiency often linked to irregular watering. Inconsistent moisture prevents the plant from taking up calcium from the soil."
+  },
+  {
+    "question": "What is the benefit of using row covers in the garden?",
+    "answer": "Row covers protect young plants from pests like insects and birds, and can also provide a few degrees of frost protection. They allow light and water to pass through."
+  },
+  {
+    "question": "How do you know when to harvest winter squash?",
+    "answer": "Winter squash is ready when the rind is hard and cannot be punctured with a fingernail. The part of the squash touching the ground should also have turned a dull color."
+  },
+  {
+    "question": "What is the role of mycorrhizal fungi in the soil?",
+    "answer": "These beneficial fungi form a symbiotic relationship with plant roots, extending their reach and helping them absorb more water and nutrients. In return, the plant provides the fungi with sugars."
+  },
+  {
+    "question": "Why is it important to rotate where you plant crops?",
+    "answer": "Crop rotation helps break cycles of pests and diseases that are specific to certain plant families. It also helps manage soil fertility, as different crops have different nutrient needs."
+  },
+  {
+    "question": "What is the simplest method for preserving tomatoes?",
+    "answer": "Freezing is the simplest method; just wash, dry, and place whole tomatoes in a freezer bag. They can be used later for cooking, though their texture will be soft."
+  },
+  {
+    "question": "How can you tell if a melon is ripe and sweet?",
+    "answer": "For cantaloupes, look for a strong sweet smell and a stem that slips off easily. For watermelons, look for a creamy yellow ground spot and a dull sound when thumped."
+  },
+  {
+    "question": "What is the key to successful organic gardening?",
+    "answer": "Focus on building healthy, living soil rich in organic matter, as it is the foundation for strong plants. Encourage biodiversity to create a balanced ecosystem that naturally manages pests."
+  },
+  {
+    "question": "What is PM-KISAN and who is eligible for it?",
+    "answer": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a central scheme providing income support of ₹6,000 per year to all landholding farmer families. The amount is paid in three equal installments directly to their bank accounts."
+  },
+  {
+    "question": "What is the objective of the Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "answer": "PMFBY aims to provide affordable crop insurance to farmers against natural calamities, pests, and diseases. It ensures financial stability and encourages farmers to adopt modern agricultural practices."
+  },
+  {
+    "question": "What is the Kisan Credit Card (KCC) scheme?",
+    "answer": "The Kisan Credit Card scheme provides farmers with timely access to credit for agricultural and allied activities. It offers flexible credit with low-interest rates and covers short-term credit needs."
+  },
+  {
+    "question": "What is the Paramparagat Krishi Vikas Yojana (PKVY)?",
+    "answer": "PKVY is a central government scheme that promotes organic farming in India. It aims to improve soil health, reduce dependence on chemicals, and create a premium market for organic produce."
+  },
+  {
+    "question": "What is the mission of the National Mission for Sustainable Agriculture (NMSA)?",
+    "answer": "NMSA aims to promote sustainable agriculture practices that are adaptable to climate change. It focuses on water use efficiency, soil health management, and integrating traditional and scientific knowledge."
+  },
+  {
+    "question": "What is the e-NAM platform launched by the government?",
+    "answer": "e-NAM (National Agriculture Market) is an online trading portal that integrates existing APMC mandis. It creates a unified national market for agricultural commodities, enabling better price discovery for farmers."
+  },
+  {
+    "question": "What is the purpose of the Soil Health Card Scheme?",
+    "answer": "The Soil Health Card Scheme provides farmers with a report on the nutrient status of their soil. It recommends appropriate dosages of nutrients to improve soil health and fertility, leading to optimized fertilizer use."
+  },
+  {
+    "question": "Which mission focuses on doubling farmers' income by 2024?",
+    "answer": "The Government of India has embarked on a comprehensive mission with various initiatives aimed at doubling farmers' income by 2024. This is not a single scheme but a goal driving all agricultural policies."
+  },
+  {
+    "question": "What is the role of the Pradhan Mantri Kisan MaanDhan Yojana?",
+    "answer": "It is a pension scheme for small and marginal farmers. They receive a monthly pension of ₹3,000 after attaining the age of 60, providing them with social security in old age."
+  },
+  {
+    "question": "What is the 'Per Drop More Crop' initiative?",
+    "answer": "It is a component of the PMKSY (Pradhan Mantri Krishi Sinchayee Yojana) focused on micro-irrigation. The goal is to promote efficient water management through drip and sprinkler irrigation systems."
+  },
+  {
+    "question": "What is Kerala's flagship scheme for organic farming?",
+    "answer": "Kerala's flagship organic farming scheme is 'Jaiva Keralam' (Organic Kerala). It aims to convert the state to sustainable and organic farming practices, focusing on soil rejuvenation and chemical-free agriculture."
+  },
+  {
+    "question": "What is the 'Subhiksha Keralam' project?",
+    "answer": "Subhiksha Keralam is a state government mission aimed at achieving food security and self-sufficiency in Kerala. It promotes vegetable and fruit cultivation in fallow land, backyard gardens, and collective farms."
+  },
+  {
+    "question": "What is the purpose of the 'Haritha Keralam Mission'?",
+    "answer": "Haritha Keralam is a green initiative that integrates waste management, water conservation, and organic farming. Its agriculture wing focuses on promoting pesticide-free cultivation and enhancing farmer welfare."
+  },
+  {
+    "question": "What is the 'Kerala Agroforestry' initiative?",
+    "answer": "This initiative promotes integrating trees and shrubs into farmland. It helps in enhancing biodiversity, improving soil health, and providing additional income to farmers through timber, fruits, and other tree products."
+  },
+  {
+    "question": "How does the 'Surabhi' scheme benefit dairy farmers in Kerala?",
+    "answer": "The 'Surabhi' scheme provides financial assistance to dairy farmers for purchasing hybrid cows and buffaloes. It aims to enhance milk production and ensure sustainable income for livestock farmers."
+  },
+  {
+    "question": "What is the 'Videshaganga' project in Kerala's fisheries sector?",
+    "answer": "Though not exclusively agriculture, Videshaganga supports the fisheries sector by promoting deep-sea fishing. It provides modern boats and equipment to fishermen to increase their catch and income."
+  },
+  {
+    "question": "What is the 'Kerala State IT Mission for Agriculture' (KSITMA)?",
+    "answer": "KSITMA leverages information technology for agriculture. It develops apps and platforms for farmers to access information on weather, market prices, best practices, and government schemes."
+  },
+  {
+    "question": "What is the 'Price Stabilization Fund' for farmers?",
+    "answer": "The Price Stabilization Fund is a central scheme to protect farmers against sharp price falls for perishable commodities. It allows for market intervention through procurement and storage."
+  },
+  {
+    "question": "What is the 'Mission for Integrated Development of Horticulture' (MIDH)?",
+    "answer": "MIDH is a centrally sponsored scheme for the holistic growth of the horticulture sector. It covers fruits, vegetables, root & tuber crops, mushrooms, spices, flowers, aromatic plants, coconut, cashew, cocoa, and bamboo."
+  },
+  {
+    "question": "What assistance does the 'National Bamboo Mission' provide?",
+    "answer": "The mission focuses on the complete value chain development of bamboo. It supports area expansion, processing units, product development, and market linkages, recognizing bamboo as a grass for farmer benefits."
+  },
+  {
+    "question": "What is the 'Kerala Model' of contract farming?",
+    "answer": "The Kerala government promotes a regulated contract farming model to ensure a fixed price and market for farmers. It links them directly with processors and retailers, reducing the role of middlemen."
+  },
+  {
+    "question": "How does the 'Rashtriya Gokul Mission' support cattle farmers?",
+    "answer": "This central mission aims to develop and conserve indigenous cattle breeds. It provides support for establishing integrated cattle development centers, ‘Gokul Grams’, and promotes advanced technology for breeding."
+  },
+  {
+    "question": "What is the 'Blue Revolution' scheme?",
+    "answer": "The Blue Revolution (Neel Kranti Mission) focuses on the holistic development and management of fisheries. It aims to increase fish production, productivity, and ensure sustainability of the fisheries sector."
+  },
+  {
+    "question": "What is the 'PM Matsya Sampada Yojana' (PMMSY)?",
+    "answer": "PMMSY is a scheme to bring about a Blue Revolution through sustainable development of fisheries. It addresses critical gaps in fish production, infrastructure, post-harvest management, and quality control."
+  },
+  {
+    "question": "What is the 'Kerala Coconut Farmers' Rehabilitation Scheme'?",
+    "answer": "This state scheme provides support to coconut farmers affected by diseases and price crashes. It includes financial aid for replanting, integrated farming, and value-addition activities."
+  },
+  {
+    "question": "What is the 'e-Procurement Portal for Horticulture Products' in Kerala?",
+    "answer": "This online portal, often linked to HORTICORP, allows farmers to directly sell their horticulture produce to government agencies. It ensures transparency and fair prices, reducing market exploitation."
+  },
+  {
+    "question": "What is the 'Agri-Clinic and Agri-Business Centre' scheme?",
+    "answer": "It is a central scheme to promote entrepreneurship in agriculture. It provides training and subsidy to agricultural graduates to set up their own ventures for providing advisory and input services to farmers."
+  },
+  {
+    "question": "How does the 'Kisan Rail' help farmers?",
+    "answer": "Kisan Rail is a dedicated freight service by Indian Railways for perishable agricultural produce. It provides a fast, cost-effective, and refrigerated transportation network from production hubs to markets."
+  },
+  {
+    "question": "What is the 'Kisan Sampada Yojana'?",
+    "answer": "Now known as the 'PM Formalisation of Micro Food Processing Enterprises (PM FME)' scheme, it aims to modernize and enhance the competitiveness of the food processing sector, creating better market access for farmers."
+  },
+  {
+    "question": "What is the 'Kerala State Seeds Project'?",
+    "answer": "This project ensures the availability of high-quality, certified seeds of various crops to farmers in Kerala. It maintains seed farms and certification agencies to guarantee genetic purity and good germination."
+  },
+  {
+    "question": "What is the 'National Mission on Oilseeds and Oil Palm' (NMOOP)?",
+    "answer": "NMOOP aims to increase the production of oilseeds and oil palm to reduce India's import dependency. It provides assistance for seeds, inputs, and area expansion under oil palm."
+  },
+  {
+    "question": "What is the 'One District One Product' (ODOP) initiative?",
+    "answer": "ODOP identifies a key product from each district and focuses on its development. It helps in scaling up production, improving quality, and building a national brand for that specific agricultural product."
+  },
+  {
+    "question": "What is the 'Kerala Millets Project'?",
+    "answer": "Following the UN declaring 2023 as the International Year of Millets, Kerala promotes millet cultivation. The project supports farmers with incentives, processing units, and creates market demand for nutritious millets."
+  },
+  {
+    "question": "How does the 'Animal Husbandry Infrastructure Development Fund' (AHIDF) help?",
+    "answer": "AHIDF provides financial support for establishing infrastructure for dairy and meat processing, animal feed plants, and waste management. It strengthens the value chain and benefits livestock farmers."
+  },
+  {
+    "question": "What is the 'Paddy Cultivation Promotion' scheme in Kerala?",
+    "answer": "Kerala offers various incentives to promote paddy cultivation and ensure food security. This includes financial assistance for cultivation, procurement at assured prices, and support for collective farming."
+  },
+  {
+    "question": "What is the 'Agri-Export Policy' of the government?",
+    "answer": "The Agri-Export Policy aims to double agricultural exports and integrate Indian farmers into the global value chain. It focuses on identifying export-oriented clusters and addressing infrastructure bottlenecks."
+  },
+  {
+    "question": "What is the 'Kerala State Cashew Development Corporation' (KSCDC)?",
+    "answer": "KSCDC supports cashew farmers and workers. It manages cashew plantations, provides processing facilities, ensures fair wages for workers, and markets cashew nuts."
+  },
+  {
+    "question": "What is the 'Digital Agriculture Mission'?",
+    "answer": "This is a central initiative to promote AI, blockchain, drones, and IoT in agriculture. It aims to create a digital ecosystem for farmers for better planning, monitoring, and marketing of their produce."
+  },
+  {
+    "question": "What is the 'Fruit Trees for All' project in Kerala?",
+    "answer": "This Haritha Keralam initiative encourages planting fruit trees in homesteads, schools, and public spaces. It aims to enhance green cover, ensure nutrition security, and provide additional income."
+  },
+  {
+    "question": "What is the 'National Beekeeping and Honey Mission' (NBHM)?",
+    "answer": "NBHM is a central scheme to promote beekeeping for income generation and cross-pollination. It provides support for beekeepers, infrastructure, and honey testing labs, branding 'Honey Mission'."
+  },
+  {
+    "question": "What is the 'Kerala State Warehousing Corporation'?",
+    "answer": "This corporation provides scientific storage facilities for agricultural produce. It helps farmers and traders avoid distress sales by storing goods and also provides pledge loans against the stored produce."
+  },
+  {
+    "question": "What is the 'Pradhan Mantri Kisan Urja Suraksha evem Utthan Mahabhiyan' (PM-KUSUM)?",
+    "answer": "PM-KUSUM aims to provide energy and water security to farmers. It supports the installation of solar pumps, solarization of existing grid-connected pumps, and setting up solar power plants on barren land."
+  },
+  {
+    "question": "What is the 'Spices Board India' and what does it do?",
+    "answer": "The Spices Board is a central agency for the development and export of spices. It provides quality certification, research support, and promotes Indian spices in the international market, greatly benefiting Kerala's spice farmers."
+  },
+  {
+    "question": "What is the 'Kerala State Insurance for Crops'?",
+    "answer": "Beyond PMFBY, Kerala has state-specific crop insurance schemes to cover localized risks and crops not covered by the central scheme. It provides a safety net against crop failure due to natural calamities."
+  },
+  {
+    "question": "ചെറുകിട കർഷകന് ഏറ്റവും അനുയോജ്യമായ കൃഷി രീതി ഏതാണ്?",
+    "answer": "സമ്മിശ്രകൃഷി (ഇൻ്റർക്രോപ്പിംഗ്), കുറ്റിക്കൃഷി, തോട്ടം കൃഷി എന്നിവ ചെറുകിട കർഷകർക്ക് ഉയർന്ന ലാഭം നൽകും. പരമ്പരാഗത കൃഷിയോടൊപ്പം കോഴി, ആട്, പശു വളർത്തൽ എന്നിവ ചേർക്കാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് എങ്ങനെ ചെലവ് കുറയ്ക്കാം?",
+    "answer": "യന്ത്രവൽക്കരണം (മെക്കാനിക്കേഷൻ) ഉപയോഗിച്ച് തൊഴിൽ ചെലവ് കുറയ്ക്കാം. ഡ്രിപ്പ്, സ്പ്രിങ്ക്ലർ സിസ്റ്റം ഉപയോഗിച്ച് ജലസംരക്ഷണം നടത്താം. ഇടവിളകൾ ചാലുകളായി നട്ട് കൃഷിചെലവ് കുറയ്ക്കാവുന്നതാണ്."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് വിപണനത്തിൽ എങ്ങനെ നല്ല വില ലഭിക്കും?",
+    "answer": "FPO (Famer Producer Organization) യിൽ ചേരുക. നേരിട്ട് വിപണന നിര്വഹണം (Direct Marketing) നടത്തുക. ഓൺലൈൻ പ്ലാറ്റ്ഫോമുകളായ ഈ-നാം, കിസാൻ റൈൽ എന്നിവ ഉപയോഗിക്കുക."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് ഏത് സർക്കാർ സബ്സിഡി സ്കീമുകളുണ്ട്?",
+    "answer": "പിഎം-കിസാൻ, പിഎം ഫസൽ ബിമാ യോജന, കിസാൻ ക്രെഡിറ്റ് കാർഡ്, സോയിൽ ഹെൽത്ത് കാർഡ്, പരമ്പരാഗത കൃഷി വികാസ യോജന (PKVY) എന്നിവ ചെറുകിട കർഷകർക്ക് ലഭ്യമാണ്."
+  },
+  {
+    "question": "വലുകിട കൃഷിയിൽ എങ്ങനെ ഉൽപാദനക്ഷമത വർദ്ധിപ്പിക്കാം?",
+    "answer": "ഉയർന്ന നിലവാരമുള്ള വിത്തുകൾ, സമീകൃത വളപ്രയോഗം, ശാസ്ത്രീയ ജലസേചനം, ക്രോപ് മോണിറ്ററിംഗിന് ഡ്രോൺ / IoT ഉപയോഗിക്കുക. ഡാറ്റ അനലിറ്റിക്സ് ഉപയോഗിച്ച് തീരുമാനങ്ങൾ എടുക്കുക."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് ഏത് വിളകൾ നട്ടാൽ നല്ലതാണ്?",
+    "answer": "പഴം, പച്ചക്കറി, മസാല സസ്യങ്ങൾ, മാതൃകാ നെല്ല്, ഹോർട്ടികൾച്ചർ വിളകൾ എന്നിവ നട്ട് ലാഭം നേടാം. ഇടവിള രീതിയും (Intercropping) പാലിക്കാം."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് വീട്ടിലെ കച്ചവടം എങ്ങനെ തുടങ്ങാം?",
+    "answer": "വീട്ടുപകരണങ്ങൾ ഉപയോഗിച്ച് പിക്കിളുകൾ, അച്ചാർ, വെജിറ്റബിൾ പൗഡർ, ഹോർട്ടികൾച്ചർ ഉൽപ്പന്നങ്ങൾ എന്നിവ ഉണ്ടാക്കി സ്ഥലിക വിപണിയിൽ വിൽക്കാം. സോഷ്യൽ മീഡിയ ഉപയോഗിച്ച് വിപണനം ചെയ്യാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് എക്സ്പോർട്ട് എങ്ങനെ തുടങ്ങാം?",
+    "answer": "APEDA (Agricultural and Processed Food Products Export Development Authority) യിൽ രജിസ്റ്റർ ചെയ്യുക. ഗുണനിലവാര മാനദണ്ഡങ്ങൾ (GAP, Organic Certification) പാലിക്കുക. എക്സ്പോർട്ട് മോർച്ചന്റുമാർക്ക് ഉൽപ്പന്നം സപ്ലൈ ചെയ്യുക."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് ജലസംരക്ഷണം എങ്ങനെ നടത്താം?",
+    "answer": "ഡ്രിപ്പ്, സ്പ്രിങ്ക്ലർ സിസ്റ്റം ഇൻസ്റ്റാൾ ചെയ്യുക. മൾച്ചിങ് രീതി ഉപയോഗിക്കുക. മഴവെള്ളം സംഭരിക്കൽ (Rainwater Harvesting) നടത്തുക. ജലം കുറച്ച് ആവശ്യമുള്ള വിളകൾ കൃഷി ചെയ്യുക."
+  },
+  {
+    "question": "എല്ലാ തരം കർഷകർക്കും ഉപയോഗപ്രദമായ ഓർഗാനിക് കൃഷി രീതികൾ ഏതൊക്കെയാണ്?",
+    "answer": "ജൈവവളം, കമ്പോസ്റ്റ്, പച്ചില വളം, ജീവാവർഷ വളം (Biofertilizers) എന്നിവ ഉപയോഗിക്കുക. ജൈവ കീടനിയന്ത്രണ രീതികൾ (നീം ഓയിൽ, ട്രാപ്പ് ക്രോപ്പ്) ഉപയോഗിക്കുക. കീടങ്ങളെ തിന്നുന്ന പക്ഷികൾക്ക് വാസസ്ഥലം ഒരുക്കുക."
+  },
+  {
+    "question": "ചെറിയ പ്രദേശത്ത് എങ്ങനെ കൃഷി ചെയ്യാം?",
+    "answer": "വെർട്ടിക്കൽ ഫാമിംഗ്, ക്രമീകരിച്ച തോട്ടം (Terrace Gardening), കണ്ടെയ്നർ കൃഷി, ഹൈഡ്രോപോണിക്സ് എന്നിവ ചെറിയ പ്രദേശത്ത് ഉയർന്ന ഉത്പാദനക്ഷമത നൽകും."
+  },
+  {
+    "question": "വലിയ കൃഷിസ്ഥലങ്ങൾ എങ്ങനെ കാര്യക്ഷമമായി നിയന്ത്രിക്കാം?",
+    "answer": "ഫാം മാനേജ്മെന്റ് സോഫ്റ്റ്വെയർ ഉപയോഗിക്കുക. വിവിധ ഭാഗങ്ങൾക്ക് വ്യത്യസ്ത വിളകൾ / ഇടവിളകൾ നട്ട് ഭൂമി ആരോഗ്യം പരിരക്ഷിക്കുക. GPS സഹിതം ട്രാക്ടർ, ഡ്രോൺ എന്നിവ ഉപയോഗിച്ച് കൃഷി ചെയ്യുക."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് വിളവ് വർദ്ധിപ്പിക്കാൻ എന്ത് ചെയ്യണം?",
+    "answer": "മണ്ണ് പരിശോധിച്ച് ശാസ്ത്രീയമായി വളം ചേർക്കുക. ഉയർന്ന നിലവാരമുള്ള വിത്തുകൾ ഉപയോഗിക്കുക. സമയം തെറ്റാതെ ജലസേചനം നടത്തുക. ക്രോപ് റൊട്ടേഷൻ പാലിക്കുക."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് കീടനിയന്ത്രണം എങ്ങനെ ചെയ്യാം?",
+    "answer": "ജൈവ കീടനിയന്ത്രണ രീതികൾ (ബയോ പെസ്റ്റിസൈഡുകൾ) ഉപയോഗിക്കുക. പക്ഷികൾ, പ്രാണികൾ എന്നിവയുടെ സഹായത്തോടെ കീടനിയന്ത്രണം നടത്തുക. നീം ഓയിൽ, ചുട്ടുപൊള്ളിച്ച ചാണകം എന്നിവ ഉപയോഗിക്കാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് യന്ത്രവത്കരണം എങ്ങനെ നടത്താം?",
+    "answer": "സബ്സിഡി യോജനകൾ ഉപയോഗിച്ച് ട്രാക്ടർ, കംബൈൻ ഹാർവെസ്റ്റർ, സീഡ് ഡ്രിൽ, പവർ ടില്ലർ എന്നിവ വാങ്ങുക. കസ്റ്റം ഹയറിംഗ് സെൻ്ററുകളിൽ നിന്ന് യന്ത്രസാമഗ്രികൾ വാടകയ്ക്കെടുക്കാം."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് ഫലം കിട്ടുന്ന കൃഷി രീതികൾ ഏതൊക്കെയാണ്?",
+    "answer": "ഡ്രിപ്പ് സിസ്റ്റം, മൾച്ചിങ്, ഇൻ്റഗ്രേറ്റഡ് ഫാമിങ്, ഇടവിള കൃഷി, ഓർഗാനിക് കൃഷി എന്നിവ ഇടനില കർഷകർക്ക് ഫലപ്രദമാണ്."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് കൃഷിയിൽ നിന്ന് അധിക വരുമാനം എങ്ങനെ നേടാം?",
+    "answer": "പാൽപ്പന്ന നിർമ്മാണം, കോഴി വളർത്തൽ, മത്സ്യകൃഷി, തേൻ ഉത്പാദനം, മഷ്റൂം കൃഷി എന്നിവ കൃഷിയോടൊപ്പം ചേർത്ത് അധിക വരുമാനം നേടാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് ക്രെഡിറ്റ് / വായ്പ എവിടെ നിന്ന് ലഭിക്കും?",
+    "answer": "ബാങ്കുകൾ, കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റികൾ, NABARD യോജനകൾ, കിസാൻ ക്രെഡിറ്റ് കാർഡ് എന്നിവയിൽ നിന്ന് വലിയ തുക വായ്പയ്ക്ക് ലഭിക്കും. പ്രോജക്റ്റ് റിപ്പോർട്ട് സമർപ്പിക്കേണ്ടതുണ്ട്."
+  },
+  {
+    "question": "എല്ലാ തരം കർഷകർക്കും ഉപയോഗിക്കാവുന്ന ഡിജിറ്റൽ ടൂളുകൾ ഏതൊക്കെയാണ്?",
+    "answer": "കിസാൻ സുവിധാ അപ്ലിക്കേഷൻ, ഈ-നാം പ്ലാറ്റ്ഫോം, മണ്ണ് ആരോഗ്യ കാർഡ് അപ്ലിക്കേഷൻ, വിപണന വില വിവരം നൽകുന്ന ആപ്പുകൾ, വാതാവരണ പ്രവചന ആപ്പുകൾ എന്നിവ ഉപയോഗിക്കാം."
+  },
+  {
+    "question": "ചെറുകിട കർഷകന് ഏറ്റവും അനുയോജ്യമായ കൃഷി രീതി ഏതാണ്?",
+    "answer": "സമ്മിശ്രകൃഷി (ഇൻ്റർക്രോപ്പിംഗ്), കുറ്റിക്കൃഷി, തോട്ടം കൃഷി എന്നിവ ചെറുകിട കർഷകർക്ക് ഉയർന്ന ലാഭം നൽകും. പരമ്പരാഗത കൃഷിയോടൊപ്പം കോഴി, ആട്, പശു വളർത്തൽ എന്നിവ ചേർക്കാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് എങ്ങനെ ചെലവ് കുറയ്ക്കാം?",
+    "answer": "യന്ത്രവൽക്കരണം (മെക്കാനിക്കേഷൻ) ഉപയോഗിച്ച് തൊഴിൽ ചെലവ് കുറയ്ക്കാം. ഡ്രിപ്പ്, സ്പ്രിങ്ക്ലർ സിസ്റ്റം ഉപയോഗിച്ച് ജലസംരക്ഷണം നടത്താം. ഇടവിളകൾ ചാലുകളായി നട്ട് കൃഷിചെലവ് കുറയ്ക്കാവുന്നതാണ്."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് വിപണനത്തിൽ എങ്ങനെ നല്ല വില ലഭിക്കും?",
+    "answer": "FPO (Famer Producer Organization) യിൽ ചേരുക. നേരിട്ട് വിപണന നിര്വഹണം (Direct Marketing) നടത്തുക. ഓൺലൈൻ പ്ലാറ്റ്ഫോമുകളായ ഈ-നാം, കിസാൻ റൈൽ എന്നിവ ഉപയോഗിക്കുക."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് ഏത് സർക്കാർ സബ്സിഡി സ്കീമുകളുണ്ട്?",
+    "answer": "പിഎം-കിസാൻ, പിഎം ഫസൽ ബിമാ യോജന, കിസാൻ ക്രെഡിറ്റ് കാർഡ്, സോയിൽ ഹെൽത്ത് കാർഡ്, പരമ്പരാഗത കൃഷി വികാസ യോജന (PKVY) എന്നിവ ചെറുകിട കർഷകർക്ക് ലഭ്യമാണ്."
+  },
+  {
+    "question": "വലുകിട കൃഷിയിൽ എങ്ങനെ ഉൽപാദനക്ഷമത വർദ്ധിപ്പിക്കാം?",
+    "answer": "ഉയർന്ന നിലവാരമുള്ള വിത്തുകൾ, സമീകൃത വളപ്രയോഗം, ശാസ്ത്രീയ ജലസേചനം, ക്രോപ് മോണിറ്ററിംഗിന് ഡ്രോൺ / IoT ഉപയോഗിക്കുക. ഡാറ്റ അനലിറ്റിക്സ് ഉപയോഗിച്ച് തീരുമാനങ്ങൾ എടുക്കുക."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് ഏത് വിളകൾ നട്ടാൽ നല്ലതാണ്?",
+    "answer": "പഴം, പച്ചക്കറി, മസാല സസ്യങ്ങൾ, മാതൃകാ നെല്ല്, ഹോർട്ടികൾച്ചർ വിളകൾ എന്നിവ നട്ട് ലാഭം നേടാം. ഇടവിള രീതിയും (Intercropping) പാലിക്കാം."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് വീട്ടിലെ കച്ചവടം എങ്ങനെ തുടങ്ങാം?",
+    "answer": "വീട്ടുപകരണങ്ങൾ ഉപയോഗിച്ച് പിക്കിളുകൾ, അച്ചാർ, വെജിറ്റബിൾ പൗഡർ, ഹോർട്ടികൾച്ചർ ഉൽപ്പന്നങ്ങൾ എന്നിവ ഉണ്ടാക്കി സ്ഥലിക വിപണിയിൽ വിൽക്കാം. സോഷ്യൽ മീഡിയ ഉപയോഗിച്ച് വിപണനം ചെയ്യാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് എക്സ്പോർട്ട് എങ്ങനെ തുടങ്ങാം?",
+    "answer": "APEDA (Agricultural and Processed Food Products Export Development Authority) യിൽ രജിസ്റ്റർ ചെയ്യുക. ഗുണനിലവാര മാനദണ്ഡങ്ങൾ (GAP, Organic Certification) പാലിക്കുക. എക്സ്പോർട്ട് മോർച്ചന്റുമാർക്ക് ഉൽപ്പന്നം സപ്ലൈ ചെയ്യുക."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് ജലസംരക്ഷണം എങ്ങനെ നടത്താം?",
+    "answer": "ഡ്രിപ്പ്, സ്പ്രിങ്ക്ലർ സിസ്റ്റം ഇൻസ്റ്റാൾ ചെയ്യുക. മൾച്ചിങ് രീതി ഉപയോഗിക്കുക. മഴവെള്ളം സംഭരിക്കൽ (Rainwater Harvesting) നടത്തുക. ജലം കുറച്ച് ആവശ്യമുള്ള വിളകൾ കൃഷി ചെയ്യുക."
+  },
+  {
+    "question": "എല്ലാ തരം കർഷകർക്കും ഉപയോഗപ്രദമായ ഓർഗാനിക് കൃഷി രീതികൾ ഏതൊക്കെയാണ്?",
+    "answer": "ജൈവവളം, കമ്പോസ്റ്റ്, പച്ചില വളം, ജീവാവർഷ വളം (Biofertilizers) എന്നിവ ഉപയോഗിക്കുക. ജൈവ കീടനിയന്ത്രണ രീതികൾ (നീം ഓയിൽ, ട്രാപ്പ് ക്രോപ്പ്) ഉപയോഗിക്കുക. കീടങ്ങളെ തിന്നുന്ന പക്ഷികൾക്ക് വാസസ്ഥലം ഒരുക്കുക."
+  },
+  {
+    "question": "ചെറിയ പ്രദേശത്ത് എങ്ങനെ കൃഷി ചെയ്യാം?",
+    "answer": "വെർട്ടിക്കൽ ഫാമിംഗ്, ക്രമീകരിച്ച തോട്ടം (Terrace Gardening), കണ്ടെയ്നർ കൃഷി, ഹൈഡ്രോപോണിക്സ് എന്നിവ ചെറിയ പ്രദേശത്ത് ഉയർന്ന ഉത്പാദനക്ഷമത നൽകും."
+  },
+  {
+    "question": "വലിയ കൃഷിസ്ഥലങ്ങൾ എങ്ങനെ കാര്യക്ഷമമായി നിയന്ത്രിക്കാം?",
+    "answer": "ഫാം മാനേജ്മെന്റ് സോഫ്റ്റ്വെയർ ഉപയോഗിക്കുക. വിവിധ ഭാഗങ്ങൾക്ക് വ്യത്യസ്ത വിളകൾ / ഇടവിളകൾ നട്ട് ഭൂമി ആരോഗ്യം പരിരക്ഷിക്കുക. GPS സഹിതം ട്രാക്ടർ, ഡ്രോൺ എന്നിവ ഉപയോഗിച്ച് കൃഷി ചെയ്യുക."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് വിളവ് വർദ്ധിപ്പിക്കാൻ എന്ത് ചെയ്യണം?",
+    "answer": "മണ്ണ് പരിശോധിച്ച് ശാസ്ത്രീയമായി വളം ചേർക്കുക. ഉയർന്ന നിലവാരമുള്ള വിത്തുകൾ ഉപയോഗിക്കുക. സമയം തെറ്റാതെ ജലസേചനം നടത്തുക. ക്രോപ് റൊട്ടേഷൻ പാലിക്കുക."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് കീടനിയന്ത്രണം എങ്ങനെ ചെയ്യാം?",
+    "answer": "ജൈവ കീടനിയന്ത്രണ രീതികൾ (ബയോ പെസ്റ്റിസൈഡുകൾ) ഉപയോഗിക്കുക. പക്ഷികൾ, പ്രാണികൾ എന്നിവയുടെ സഹായത്തോടെ കീടനിയന്ത്രണം നടത്തുക. നീം ഓയിൽ, ചുട്ടുപൊള്ളിച്ച ചാണകം എന്നിവ ഉപയോഗിക്കാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് യന്ത്രവത്കരണം എങ്ങനെ നടത്താം?",
+    "answer": "സബ്സിഡി യോജനകൾ ഉപയോഗിച്ച് ട്രാക്ടർ, കംബൈൻ ഹാർവെസ്റ്റർ, സീഡ് ഡ്രിൽ, പവർ ടില്ലർ എന്നിവ വാങ്ങുക. കസ്റ്റം ഹയറിംഗ് സെൻ്ററുകളിൽ നിന്ന് യന്ത്രസാമഗ്രികൾ വാടകയ്ക്കെടുക്കാം."
+  },
+  {
+    "question": "ഇടനില കർഷകർക്ക് ഫലം കിട്ടുന്ന കൃഷി രീതികൾ ഏതൊക്കെയാണ്?",
+    "answer": "ഡ്രിപ്പ് സിസ്റ്റം, മൾച്ചിങ്, ഇൻ്റഗ്രേറ്റഡ് ഫാമിങ്, ഇടവിള കൃഷി, ഓർഗാനിക് കൃഷി എന്നിവ ഇടനില കർഷകർക്ക് ഫലപ്രദമാണ്."
+  },
+  {
+    "question": "ചെറുകിട കർഷകർക്ക് കൃഷിയിൽ നിന്ന് അധിക വരുമാനം എങ്ങനെ നേടാം?",
+    "answer": "പാൽപ്പന്ന നിർമ്മാണം, കോഴി വളർത്തൽ, മത്സ്യകൃഷി, തേൻ ഉത്പാദനം, മഷ്റൂം കൃഷി എന്നിവ കൃഷിയോടൊപ്പം ചേർത്ത് അധിക വരുമാനം നേടാം."
+  },
+  {
+    "question": "വലുകിട കർഷകർക്ക് ക്രെഡിറ്റ് / വായ്പ എവിടെ നിന്ന് ലഭിക്കും?",
+    "answer": "ബാങ്കുകൾ, കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റികൾ, NABARD യോജനകൾ, കിസാൻ ക്രെഡിറ്റ് കാർഡ് എന്നിവയിൽ നിന്ന് വലിയ തുക വായ്പയ്ക്ക് ലഭിക്കും. പ്രോജക്റ്റ് റിപ്പോർട്ട് സമർപ്പിക്കേണ്ടതുണ്ട്."
+  },
+  {
+    "question": "എല്ലാ തരം കർഷകർക്കും ഉപയോഗിക്കാവുന്ന ഡിജിറ്റൽ ടൂളുകൾ ഏതൊക്കെയാണ്?",
+    "answer": "കിസാൻ സുവിധാ അപ്ലിക്കേഷൻ, ഈ-നാം പ്ലാറ്റ്ഫോം, മണ്ണ് ആരോഗ്യ കാർഡ് അപ്ലിക്കേഷൻ, വിപണന വില വിവരം നൽകുന്ന ആപ്പുകൾ, വാതാവരണ പ്രവചന ആപ്പുകൾ എന്നിവ ഉപയോഗിക്കാം."
+  },
+  {
+    "question": "Question 21 in Malayalam",
+    "answer": "Answer for question 21 in Malayalam, tailored for the scale of farming."
+  },
+  {
+    "question": "Question 22 in Malayalam",
+    "answer": "Answer for question 22 in Malayalam, tailored for the scale of farming."
+  },
+ {
+    "question": "വലുകിട കർഷകർക്ക് സംഭരണ സൗകര്യങ്ങൾ എങ്ങനെ സ്ഥാപിക്കാം?",
+    "answer": "കോൾഡ് സ്റ്റോറേജ് യൂണിറ്റുകൾ, വെയർഹൗസുകൾ, സൈലോകൾ എന്നിവ സ്ഥാപിക്കാം. സർക്കാർ സബ്സിഡി യോജനകൾ പ്രകാരം സഹായം ലഭിക്കും. ഉൽപ്പന്നങ്ങളുടെ ഗുണനിലവാരം കാത്തുസൂക്ഷിക്കാം."
+  }
+]

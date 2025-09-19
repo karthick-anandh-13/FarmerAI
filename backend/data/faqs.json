@@ -1,0 +1,20 @@
+[
+  {
+    "question": "How often should I water my tomato plants?",
+    "answer": "Water tomato plants deeply 2–3 times per week depending on weather. Ensure soil stays moist but not waterlogged.",
+    "tags": ["tomato","irrigation","en"],
+    "lang": "en"
+  },
+  {
+    "question": "सब्जियों की खाद कब डालनी चाहिए?",
+    "answer": "सर्दियों से पहले और रोपाई के समय संतुलित खाद दें। मिट्टी की स्थिति के अनुसार NPK समायोजित करें।",
+    "tags": ["fertilizer","hi"],
+    "lang": "hi"
+  },
+  {
+    "question": "How to identify blight on potatoes?",
+    "answer": "Look for brown lesions on leaves and dark patches on tubers; remove infected plants and rotate crops.",
+    "tags": ["disease","potato","en"],
+    "lang": "en"
+  }
+]

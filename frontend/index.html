@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Keep this - required for responsive layouts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vite + React</title>
+
+    <!-- Small inline guard so the app doesn't collapse into a tiny "mobile" column on desktop.
+         If you prefer full responsiveness without a min width, remove or lower the min-width value. -->
+    <style>
+      /* Ensure the app root fills the viewport and doesn't collapse to an ultra-narrow width on desktop */
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body, #root { height: 100%; margin: 0; padding: 0; }
+      /* This forces a sensible minimum layout width for desktop view.
+         Lower the value if you want smaller desktop widths, or remove entirely to rely solely on CSS layout. */
+      @media (min-width: 900px) {
+        body { min-width: 1100px; }
+        #root { min-width: 1100px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

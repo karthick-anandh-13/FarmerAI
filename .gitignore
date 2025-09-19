@@ -1,7 +1,13 @@
+# =========================
+# Node / React / Vite / General
+# =========================
+
 # Node modules
 node_modules/
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Environment files
 .env
@@ -9,7 +15,7 @@ yarn-error.log
 .env.*.local
 
 # Logs
-logs
+logs/
 *.log
 *.log.*
 pids
@@ -19,23 +25,78 @@ pids
 
 # Uploads (user uploaded files, not needed in git)
 uploads/
+storage/
+tmp/
 
-# Coverage / test
+# Coverage / test output
 coverage/
 *.lcov
+.nyc_output/
 
 # Build / cache
 dist/
 build/
 .cache/
 .tmp/
+out/
+.vite/
+vite.config.ts.timestamp-*   # Vite temporary cache
+
+# =========================
+# OS-specific
+# =========================
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# IDE files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =========================
+# IDEs / Editors
+# =========================
+
+# VSCode
 .vscode/
-.idea/
-*.swp
+.history/
+*.code-workspace
 
-# Misc
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Others
+*.swp
+*.swo
 *.bak
 *.old
+
+# =========================
+# Misc
+# =========================
+
+# Lockfiles (optional: keep one if your team standardizes)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Local database / cache
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+*.rdb
+
+# Secret keys / credentials (if mistakenly added)
+*.pem
+*.key
+*.crt
+*.p12
+*.cer

@@ -1,5 +1,5 @@
 // E:\FarmerAI\src\index.js
-require("dotenv").config(); // load env first
+require("dotenv").config();
 
 const path = require("path");
 const fs = require("fs");
@@ -10,23 +10,23 @@ const http = require("http");
 const { Server } = require("socket.io");
 const jwt = require("jsonwebtoken");
 
-// Import routes & middleware from backend folder
+// --- Import routes ---
 const authRoutes = require("../backend/routes/authRoutes");
-const userRoutes = require("../backend/routes/userRoutes"); // user profile routes
+const userRoutes = require("../backend/routes/userRoutes");
 const postRoutes = require("../backend/routes/postRoutes");
 const chatRoutes = require("../backend/routes/chatRoutes");
 const notificationRoutes = require("../backend/routes/notificationRoutes");
 const groupRoutes = require("../backend/routes/groupRoutes");
-const followRoutes = require("../backend/routes/followRoutes"); // follow & feed
+const followRoutes = require("../backend/routes/followRoutes");
+const qaRoutes = require("../backend/routes/qaRoutes"); // FAQ/QA routes
 const authMiddleware = require("../backend/middleware/auth");
 
 const app = express();
-const server = http.createServer(app); // Wrap express in http server
+const server = http.createServer(app);
+
+// --- Socket.IO ---
 const io = new Server(server, {
-  cors: {
-    origin: "*", // allow all origins (fine for dev)
-    methods: ["GET", "POST"],
-  },
+  cors: { origin: "*", methods: ["GET", "POST"] },
 });
 
 // --- Ensure uploads directory exists ---
@@ -37,42 +37,31 @@ if (!fs.existsSync(uploadsDir)) {
 
 // --- Middleware ---
 app.use(cors());
-
-// request logger for dev
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} › ${req.method} ${req.originalUrl}`);
   next();
 });
-
-// body parsers (multer handles multipart in routes that use it)
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
-
-// serve uploads directory (static files)
 app.use("/uploads", express.static(uploadsDir));
 
 // --- Config ---
-const PORT = process.env.PORT || 5000;
-const MONGO_URI =
-  process.env.MONGO_URI || "mongodb://127.0.0.1:27017/farmerai";
+const PORT = Number(process.env.PORT) || 5000;
+const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/farmerai";
+const JWT_SECRET = process.env.JWT_SECRET || "secret123";
 
-// --- MongoDB connection with retry ---
+// --- MongoDB connection ---
 async function connectWithRetry(retries = 10, interval = 2000) {
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
       console.log(`🔌 Attempting MongoDB connect (#${attempt})...`);
-      await mongoose.connect(MONGO_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      });
+      await mongoose.connect(MONGO_URI);
       console.log("✅ MongoDB connected");
       return;
     } catch (err) {
-      console.error(`❌ MongoDB connection error: ${err?.message || err}`);
+      console.error(`❌ MongoDB error: ${err?.message || err}`);
       if (attempt === retries) {
-        console.error(
-          "❌ Could not connect to MongoDB after retries. Exiting process."
-        );
+        console.error("❌ Could not connect to MongoDB after retries. Exiting process.");
         process.exit(1);
       }
       console.log(`⏳ Retrying in ${interval / 1000}s...`);
@@ -80,52 +69,64 @@ async function connectWithRetry(retries = 10, interval = 2000) {
     }
   }
 }
-connectWithRetry();
+connectWithRetry().catch((e) => {
+  console.error("Fatal Mongo connection error:", e);
+  process.exit(1);
+});
 
 // --- Socket.IO auth middleware ---
 io.use((socket, next) => {
-  const token = socket.handshake.auth?.token;
-  if (!token) return next(new Error("No token provided"));
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || "secret123");
-    socket.user = decoded; // attach user to socket
-    next();
+    const token = socket.handshake.auth?.token;
+    if (!token) return next(new Error("No token provided"));
+    const decoded = jwt.verify(token, JWT_SECRET);
+    // ensure decoded has id
+    if (!decoded || !decoded.id) return next(new Error("Invalid token payload"));
+    socket.user = decoded;
+    return next();
   } catch (err) {
-    next(new Error("Invalid token"));
+    return next(new Error("Invalid token"));
   }
 });
 
 // --- Socket.IO events ---
 io.on("connection", (socket) => {
-  console.log(`🔌 User connected: ${socket.user.id}`);
+  const userId = socket.user?.id || socket.user?._id;
+  console.log(`🔌 User connected: ${userId || "(unknown id)"}`);
+
+  // join a private room for direct messages (use string id)
+  if (userId) socket.join(String(userId));
 
   // private message
   socket.on("private_message", ({ to, content }) => {
-    io.to(to).emit("private_message", {
-      from: socket.user.id,
+    if (!to || !content) return;
+    io.to(String(to)).emit("private_message", {
+      from: String(userId),
       content,
-      timestamp: new Date(),
+      timestamp: new Date().toISOString(),
     });
   });
 
   // join group
   socket.on("join_group", (groupId) => {
-    socket.join(groupId);
-    console.log(`📢 User ${socket.user.id} joined group ${groupId}`);
+    if (!groupId) return;
+    socket.join(String(groupId));
+    console.log(`📢 User ${userId} joined group ${groupId}`);
   });
 
   // group message
   socket.on("group_message", ({ groupId, content }) => {
-    io.to(groupId).emit("group_message", {
-      from: socket.user.id,
-      groupId,
+    if (!groupId || !content) return;
+    io.to(String(groupId)).emit("group_message", {
+      from: String(userId),
+      groupId: String(groupId),
       content,
-      timestamp: new Date(),
+      timestamp: new Date().toISOString(),
     });
   });
 
-  socket.on("disconnect", () => {
-    console.log(`❌ User disconnected: ${socket.user.id}`);
+  socket.on("disconnect", (reason) => {
+    console.log(`❌ User disconnected: ${userId || "(unknown)"} — ${reason || "socket closed"}`);
   });
 });
 
@@ -139,7 +140,7 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// mount api routes
+// mount API routes
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
@@ -147,41 +148,34 @@ app.use("/api/chat", chatRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/groups", groupRoutes);
 app.use("/api", followRoutes);
+app.use("/api/qa", qaRoutes);
 
 // protected test endpoint
 app.get("/api/protected", authMiddleware, (req, res) => {
-  res.json({
-    success: true,
-    message: "You accessed a protected route",
-    user: req.user,
-  });
+  res.json({ success: true, message: "You accessed a protected route", user: req.user });
 });
 
-// 404 handler
+// 404 handler for unknown API routes
 app.use((req, res, next) => {
   if (req.path.startsWith("/api/")) {
-    return res
-      .status(404)
-      .json({ success: false, message: "API route not found" });
+    return res.status(404).json({ success: false, message: "API route not found" });
   }
   next();
 });
 
-// error handler
+// centralized error handler
 app.use((err, req, res, next) => {
-  console.error("Unhandled error:", err && err.stack ? err.stack : err);
+  console.error("Unhandled error:", err?.stack || err);
   if (err && err.message && err.message.includes("Only image files")) {
     return res.status(400).json({ success: false, message: err.message });
   }
-  res.status(err.status || 500).json({
-    success: false,
-    message: err.message || "Internal server error",
-  });
+  res.status(err.status || 500).json({ success: false, message: err.message || "Internal error" });
 });
 
 // --- Start server ---
 server.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`    Socket.IO ready`);
 });
 
 // --- Graceful shutdown ---
